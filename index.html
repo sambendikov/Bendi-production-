@@ -9,58 +9,68 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <img src="logo.png" alt="Bendi Logo" class="logo">
-            <h1>Bendi הפקות</h1>
-            <p class="slogan">הצליל שמרקיד את הלב, התאורה שמאירה את החלום</p>
+        <header class="hero">
+            <div class="overlay">
+                <h1>Bendi הפקות</h1>
+                <p class="slogan">הצליל שמרקיד את הלב, התאורה שמאירה את החלום</p>
+                <a href="#contact" class="btn-primary">צור קשר</a>
+            </div>
         </header>
 
-        <main>
-            <section>
-                <h2>השירותים שלנו</h2>
-                <div class="services">
-                    <div class="card">
-                        <h3>הגברה</h3>
-                        <p>מערכות סאונד איכותיות לכל אירוע עם תפעול מקצועי וניסיון עשיר.</p>
-                    </div>
-                    <div class="card">
-                        <h3>ניהול טכני</h3>
-                        <p>ניהול וליווי טכני מלא של האירוע מהקמה ועד סוף.</p>
-                    </div>
-                    <div class="card">
-                        <h3>ניהול במה</h3>
-                        <p>ניהול הופעות ואירועים בצורה בטוחה, מסונכרנת ומדויקת.</p>
-                    </div>
-                    <div class="card">
-                        <h3>כנסים והרצאות</h3>
-                        <p>תכנון, ארגון והפקת כנסים וימי עיון בליווי טכני צמוד.</p>
-                    </div>
+        <section class="services">
+            <h2>השירותים שלנו</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>הגברה</h3>
+                    <p>מערכות סאונד מתקדמות לכל אירוע – איכות שמע מרגשת עם ציוד חדיש.</p>
                 </div>
-            </section>
-
-            <section>
-                <h2>לקוחות ממליצים</h2>
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <div class="testimonial">"Bendi הפקות הרימו לנו את החתונה – פשוט מושלם!"</div>
-                        <div class="testimonial">"אין כמו סם והצוות – הכל תקתק באירוע שלנו."</div>
-                        <div class="testimonial">"חוויה של סאונד ותאורה ברמה הגבוהה ביותר."</div>
-                        <div class="testimonial">"מקצוענים אמיתיים. תודה בנדי!"</div>
-                        <div class="testimonial">"מהשיחה הראשונה ועד סוף האירוע – ליווי אישי ומקצועי."</div>
-                    </div>
+                <div class="card">
+                    <h3>ניהול טכני</h3>
+                    <p>ליווי טכני מלא – חשמל, תאורה, וידאו וסאונד, הכל מתוזמן ומדויק.</p>
                 </div>
-            </section>
+                <div class="card">
+                    <h3>ניהול במה</h3>
+                    <p>הפקת מופעים ואירועים עם ניהול צוותים, חזרות, תזמונים ובטיחות.</p>
+                </div>
+                <div class="card">
+                    <h3>כנסים והרצאות</h3>
+                    <p>תכנון והפקת כנסים מקצועיים ברמה גבוהה עם פתרונות יצירתיים.</p>
+                </div>
+            </div>
+        </section>
 
-            <section class="contact-form">
-                <h2>צור קשר</h2>
-                <form>
-                    <input type="text" placeholder="שם מלא" required>
-                    <input type="email" placeholder="אימייל" required>
-                    <textarea placeholder="הודעה" required></textarea>
-                    <button type="submit">שלח</button>
-                </form>
-            </section>
-        </main>
+        <section class="carousel-section">
+            <h2>לקוחות ממליצים</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="testimonial">"Bendi הפקות הרימו לנו את החתונה – פשוט מדהים!"</div>
+                    <div class="testimonial">"שירות מקצועי, איכות סאונד וביצוע מושלם."</div>
+                    <div class="testimonial">"לא הרגשנו את ההפקה – הכל פשוט זרם. תודה ענקית!"</div>
+                    <div class="testimonial">"סם והצוות של בנדי מקצוענים ברמות הכי גבוהות."</div>
+                    <div class="testimonial">"ממליץ לכל מי שמחפש שקט נפשי ואיכות!"</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>מהשטח – גלריה</h2>
+            <div class="gallery-grid">
+                <img src="https://source.unsplash.com/400x300/?concert,lights" alt="אירוע">
+                <img src="https://source.unsplash.com/400x300/?stage,sound" alt="במה">
+                <img src="https://source.unsplash.com/400x300/?dj,lighting" alt="תאורה">
+                <img src="https://source.unsplash.com/400x300/?audio,mixer" alt="סאונד">
+            </div>
+        </section>
+
+        <section class="contact-form" id="contact">
+            <h2>צור קשר</h2>
+            <form>
+                <input type="text" placeholder="שם מלא" required>
+                <input type="email" placeholder="אימייל" required>
+                <textarea placeholder="הודעה" required></textarea>
+                <button type="submit">שלח</button>
+            </form>
+        </section>
 
         <footer>
             <div class="social-links">
