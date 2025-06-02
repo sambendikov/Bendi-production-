@@ -3,77 +3,113 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Heebo', sans-serif;
-    background: #0d0d0d;
-    color: #f0f0f0;
+    background: #f9f9f9;
+    color: #333;
     direction: rtl;
 }
+
 .container {
-    max-width: 960px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
+
 .logo {
-    width: 160px;
+    width: 140px;
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 10px;
 }
+
 header {
     text-align: center;
-    padding: 40px;
-    background: linear-gradient(145deg, #1e1e1e, #121212);
+    padding: 30px;
+    background: #ffffff;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
+
 header h1 {
-    font-size: 3em;
-    color: gold;
+    margin: 0;
+    font-size: 2.8em;
+    color: #222;
 }
+
 .slogan {
     font-size: 1.2em;
-    color: #ccc;
+    color: #666;
 }
-section {
-    margin: 30px 0;
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    background: #fff;
+    flex: 1 1 45%;
     padding: 20px;
-    background: #1a1a1a;
     border-radius: 10px;
-    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    min-width: 200px;
 }
-section h2 {
-    color: #ffd700;
+
+.carousel {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
 }
-.testimonial p {
-    margin-bottom: 5px;
+
+.carousel-track {
+    display: inline-flex;
+    gap: 10px;
 }
+
+.testimonial {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 250px;
+    max-width: 250px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    font-style: italic;
+}
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     font-size: 1em;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .contact-form button {
     padding: 10px 20px;
-    background: gold;
-    color: black;
-    font-weight: bold;
+    background: #007acc;
+    color: white;
     border: none;
     border-radius: 5px;
+    font-weight: bold;
     cursor: pointer;
 }
+
 footer {
     text-align: center;
     margin-top: 40px;
     padding: 20px;
     font-size: 0.9em;
-    color: #aaa;
+    color: #888;
 }
+
 .social-links a {
-    color: gold;
+    color: #007acc;
     text-decoration: none;
     margin: 0 5px;
 }
+
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -85,11 +121,4 @@ footer {
     border-radius: 50%;
     text-decoration: none;
     box-shadow: 0 0 10px #000;
-}
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-}
-@keyframes fadeIn {
-    to { opacity: 1; }
 }

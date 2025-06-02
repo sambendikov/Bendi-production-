@@ -2,47 +2,56 @@
 <html lang="he">
 <head>
     <meta charset="UTF-8">
-    <title>Bendi | סם הפקות</title>
+    <title>Bendi הפקות</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <audio autoplay loop hidden>
-        <source src="background.mp3" type="audio/mpeg">
-    </audio>
     <div class="container">
-        <header class="fade-in">
+        <header>
             <img src="logo.png" alt="Bendi Logo" class="logo">
-            <h1>Bendi | סם הפקות</h1>
+            <h1>Bendi הפקות</h1>
             <p class="slogan">הצליל שמרקיד את הלב, התאורה שמאירה את החלום</p>
         </header>
+
         <main>
-            <section class="fade-in">
-                <h2>הגברה</h2>
-                <p>מערכות סאונד מתקדמות לכל אירוע – איכות שמע ברמה הגבוהה ביותר עם ציוד חדיש ומתופעל ע״י אנשי סאונד מקצועיים.</p>
+            <section>
+                <h2>השירותים שלנו</h2>
+                <div class="services">
+                    <div class="card">
+                        <h3>הגברה</h3>
+                        <p>מערכות סאונד איכותיות לכל אירוע עם תפעול מקצועי וניסיון עשיר.</p>
+                    </div>
+                    <div class="card">
+                        <h3>ניהול טכני</h3>
+                        <p>ניהול וליווי טכני מלא של האירוע מהקמה ועד סוף.</p>
+                    </div>
+                    <div class="card">
+                        <h3>ניהול במה</h3>
+                        <p>ניהול הופעות ואירועים בצורה בטוחה, מסונכרנת ומדויקת.</p>
+                    </div>
+                    <div class="card">
+                        <h3>כנסים והרצאות</h3>
+                        <p>תכנון, ארגון והפקת כנסים וימי עיון בליווי טכני צמוד.</p>
+                    </div>
+                </div>
             </section>
-            <section class="fade-in">
-                <h2>ניהול טכני</h2>
-                <p>תיאום טכני מלא לאירועים מכל סוג – ניהול חשמל, תאורה, וידאו וסאונד. דואגים שכל פרט יהיה במקום.</p>
+
+            <section>
+                <h2>לקוחות ממליצים</h2>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="testimonial">"Bendi הפקות הרימו לנו את החתונה – פשוט מושלם!"</div>
+                        <div class="testimonial">"אין כמו סם והצוות – הכל תקתק באירוע שלנו."</div>
+                        <div class="testimonial">"חוויה של סאונד ותאורה ברמה הגבוהה ביותר."</div>
+                        <div class="testimonial">"מקצוענים אמיתיים. תודה בנדי!"</div>
+                        <div class="testimonial">"מהשיחה הראשונה ועד סוף האירוע – ליווי אישי ומקצועי."</div>
+                    </div>
+                </div>
             </section>
-            <section class="fade-in">
-                <h2>ניהול במה</h2>
-                <p>הפקה וניהול של מופעים, פסטיבלים ואירועים עם ניהול זמנים קפדני ותיאום מלא מול אמנים, תאורנים וסאונדמנים.</p>
-            </section>
-            <section class="fade-in">
-                <h2>כנסים והרצאות</h2>
-                <p>ליווי טכני מלא לאירועים עסקיים, הרצאות מקצועיות וכנסים ברמה הגבוהה ביותר.</p>
-            </section>
-            <section class="fade-in testimonials">
-                <h2>המלצות לקוחות</h2>
-                <div class="testimonial"><p>"Bendi | סם הפקות הרימו לנו את החתונה – תרתי משמע. סאונד חד, תאורה מדויקת, ואנרגיה מדהימה. תודה!"</p><p><strong>— נטע ארביב</strong></p></div>
-                <div class="testimonial"><p>"אין דברים כאלה. מקצוענות, זמינות, פתרון לכל בעיה – סם הוא האיש שלכם לאירוע!"</p><p><strong>— תומר גלבר</strong></p></div>
-                <div class="testimonial"><p>"הופעה חיה שקיבלה הפקה מושלמת. סם הפקות שידרגו אותנו כמה רמות קדימה."</p><p><strong>— להקת LIVE & FUN</strong></p></div>
-                <div class="testimonial"><p>"סם והצוות של בנדי הפקות דאגו שהכול ירוץ חלק – גם מאחורי הקלעים וגם בקדמת הבמה."</p><p><strong>— דנה כהן</strong></p></div>
-                <div class="testimonial"><p>"כשסם על ההגברה – אתם יודעים שהולך להיות ערב בלתי נשכח. תודה בנדי!"</p><p><strong>— ניר לוי</strong></p></div>
-            </section>
-            <section class="fade-in contact-form">
+
+            <section class="contact-form">
                 <h2>צור קשר</h2>
                 <form>
                     <input type="text" placeholder="שם מלא" required>
@@ -52,6 +61,7 @@
                 </form>
             </section>
         </main>
+
         <footer>
             <div class="social-links">
                 <a href="https://www.facebook.com/sam.bendik" target="_blank">פייסבוק</a> |
@@ -59,9 +69,10 @@
                 <a href="https://www.tiktok.com/@sambendikov" target="_blank">טיקטוק</a> |
                 <a href="https://youtube.com/@sambendikov" target="_blank">יוטיוב</a>
             </div>
-            <p>© 2025 Bendi | סם הפקות</p>
+            <p>© 2025 Bendi הפקות</p>
         </footer>
     </div>
+
     <a class="whatsapp" href="https://wa.me/972524630027" target="_blank">📱</a>
 </body>
 </html>
